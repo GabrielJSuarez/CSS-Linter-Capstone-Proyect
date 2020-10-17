@@ -24,4 +24,16 @@ def create_report
   end
 end
 
-create_report
+def print_report
+  puts Rainbow("Welcome to Ginn's CSS linter").blue.underline
+  puts ""
+  puts Rainbow("Please, run the script with the route of the css file that you want to check!").blue
+  puts ""
+  puts "Loading..."
+  sleep 1
+  puts ""
+  create_report
+end
+
+print_report
+

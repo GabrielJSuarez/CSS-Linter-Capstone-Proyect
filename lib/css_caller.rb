@@ -1,13 +1,15 @@
+# frozen_string_literal: true
+
 require_relative '../lib/linter_suite'
 
 class Invoker
   attr_reader :file_data
   include Linter
 
-  def initialize()
+  def initialize
     @file_path = ARGV[0]
     @file = File.open(@file_path)
-    @file_data = @file.readlines.map(&:chomp) 
+    @file_data = @file.readlines.map(&:chomp)
   end
 
   def test_caller(file_data, error_message)
