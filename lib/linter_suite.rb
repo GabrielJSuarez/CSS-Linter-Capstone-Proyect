@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 # Linter module with all the methods to perform checks on a css file.
-
 module Linter
+  # rubocop:disable Metrics/CyclomaticComplexity
+  # rubocop:disable Metrics/PerceivedComplexity
   def trailing_white_space?(file, error_log)
     errorlog = 'trailing white space on line'
 
@@ -83,7 +84,7 @@ module Linter
   end
 
   def line_declaration_end?(file, error_log)
-    errorlog6 = 'Declaration should end with a semi-colon on line'
+    errorlog6 = 'Declaration should end with a semi-colon (Trailing white space?), on line'
 
     file.each_with_index do |x, y|
       next if x.include?('{') || x.include?('}') || x == '' || x.start_with?('/*') || x.end_with?(',')
@@ -105,7 +106,7 @@ module Linter
   end
 
   def prefix_property_values?(file, error_log)
-    errorlog8 = 'Unexpected prefix float value on line'
+    errorlog8 = 'Unexpected prefix property float value on line'
 
     file.each_with_index do |x, y|
       next if x.include?('{') || x.include?('}') || x == '' || x.start_with?('/*') || x.end_with?(',')
@@ -133,4 +134,6 @@ module Linter
 
     error_log
   end
+  # rubocop:enable Metrics/CyclomaticComplexity
+  # rubocop:enable Metrics/PerceivedComplexity
 end

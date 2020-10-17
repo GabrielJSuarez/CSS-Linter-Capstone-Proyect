@@ -2,8 +2,9 @@
 
 # spec/linter_spec.rb
 require '../lib/linter_suite.rb'
+# rubocop:disable Style/MixinUsage
 include Linter
-
+# rubocop:enable Style/MixinUsage
 describe Linter do
   describe '#space_after_colon?' do
     let(:test_case_error) { ['  padding:0 .5rem;'] }

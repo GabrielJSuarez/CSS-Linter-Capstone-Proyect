@@ -2,8 +2,9 @@
 
 # spec/linter_spec.rb
 require '../lib/linter_suite.rb'
+# rubocop:disable Style/MixinUsage
 include Linter
-
+# rubocop:enable Style/MixinUsage
 describe Linter do
   describe '#comma_separated_values?' do
     let(:test_case_error) { ['  font-family: "Times New Roman",Times,serif;'] }

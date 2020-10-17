@@ -3,7 +3,6 @@
 require_relative '../lib/linter_suite'
 
 # Class that calls the path of the file that we will check and all the helper methods to check sintax
-
 class Invoker
   attr_reader :file_data
   include Linter
