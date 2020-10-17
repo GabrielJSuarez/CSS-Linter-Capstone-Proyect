@@ -39,7 +39,7 @@
 ## Getting Started
 
 - To run the Linter script you can type in the console 'bin/main.rb' followed by the file path of the CSS file that you want to check
-  EXAMPLE: bin/main.rb assets/css/style_test_2.css 
+  EXAMPLE: bin/main assets/css/style_test_2.css 
 
 - To run the Rspec test suit just type in the console 'rspec' and the test suit will run
 

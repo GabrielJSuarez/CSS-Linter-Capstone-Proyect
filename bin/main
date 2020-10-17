@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'rainbow'
 require_relative '../lib/css_caller'
 
