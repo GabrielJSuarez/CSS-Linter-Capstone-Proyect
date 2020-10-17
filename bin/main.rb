@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-# Caller
-
+require 'rainbow'
 require_relative '../lib/css_caller'
 
 def run_linter
@@ -18,10 +17,10 @@ def create_report
   if report.length.positive?
     report.each do |x|
       errors += 1
-      puts "#{errors} - #{x}"
+      puts Rainbow("#{errors} - #{x}").red
     end
   else
-    puts 'No error found in file'
+    puts Rainbow('No error found in file').green
   end
 end
 
