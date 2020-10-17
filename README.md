@@ -33,7 +33,7 @@
 
 ## Repl
 
-[Live Demo for main and tests](https://repl.it/@GinnLaiho/EnumerableMethodsWith-Rspec#bin/main.rb)
+[Live Demo for main and tests](https://repl.it/@GinnLaiho/CSS-Linter-Capstone-Proyect#README.md)
 
 
 ## Getting Started
