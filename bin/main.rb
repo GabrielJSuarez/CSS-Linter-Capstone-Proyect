@@ -12,19 +12,17 @@ def run_linter
   error_message
 end
 
-def create_report()
+def create_report
   errors = 0
-  report = run_linter()
-  if report.length > 0
+  report = run_linter
+  if report.length.positive?
     report.each do |x|
       errors += 1
-      puts "#{errors} - #{x}" 
+      puts "#{errors} - #{x}"
     end
   else
-    puts "No error found in file"
+    puts 'No error found in file'
   end
 end
 
-create_report()
-
-
+create_report
