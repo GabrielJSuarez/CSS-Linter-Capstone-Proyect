@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # spec/linter_spec.rb
 require '../lib/linter_suite.rb'
 # rubocop:disable Style/MixinUsage

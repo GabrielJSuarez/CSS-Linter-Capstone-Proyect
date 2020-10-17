@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Linter module with all the methods to perform checks on a css file.
 module Linter
   # rubocop:disable Metrics/CyclomaticComplexity
@@ -39,9 +37,7 @@ module Linter
     errorlog2 = 'Expected indentation of two spaces in declaration on line'
 
     file.each_with_index do |x, y|
-      if x.include?('{') || x.include?('}') || x == '' || x.start_with?('/*') || x.end_with?(',') || x.end_with?(' ')
-        next
-      end
+      next if x.include?('{') || x.include?('}') || x == '' || x.start_with?('/*') || x.end_with?(',') || x.end_with?(' ')
 
       error_log << "#{errorlog2} #{y + 1}" unless x.start_with?('  ')
     end
@@ -63,9 +59,7 @@ module Linter
     errorlog4 = 'Empty space expected after colon (:) in declaration on line'
 
     file.each_with_index do |x, y|
-      if x.include?('{') || x.include?('}') || x == '' || x.start_with?('/*') || x.end_with?(',') || x.end_with?(' ')
-        next
-      end
+      next if x.include?('{') || x.include?('}') || x == '' || x.start_with?('/*') || x.end_with?(',') || x.end_with?(' ')
 
       error_log << "#{errorlog4} #{y + 1}" unless x.include?(': ')
     end
