@@ -5,7 +5,7 @@ include Linter
 # rubocop:enable Style/MixinUsage
 describe Linter do
   describe '#soft_tab_indentation?' do
-    let(:test_case_error) { ['padding: 0 .5rem;'] }
+    let(:test_case_error) { ['    padding: 0 .5rem;'] }
     let(:test_case_no_error) { ['  padding: 0 .5rem;'] }
 
     context '#soft_tab_indentation? behaviour' do

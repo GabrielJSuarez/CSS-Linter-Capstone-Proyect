@@ -39,7 +39,7 @@ module Linter
     file.each_with_index do |x, y|
       next if x.include?('{') || x.include?('}') || x == '' || x.start_with?('/*') || x.end_with?(',') || x.end_with?(' ')
 
-      error_log << "#{errorlog2} #{y + 1}" unless x.start_with?('  ')
+      error_log << "#{errorlog2} #{y + 1}" unless x[/^ */].length == 2
     end
     error_log
   end
@@ -78,7 +78,7 @@ module Linter
   end
 
   def line_declaration_end?(file, error_log)
-    errorlog6 = 'Declaration should end with a semi-colon (Trailing white space?), on line'
+    errorlog6 = 'Declaration should end with a semi-colon on line'
 
     file.each_with_index do |x, y|
       next if x.include?('{') || x.include?('}') || x == '' || x.start_with?('/*') || x.end_with?(',')
@@ -100,7 +100,7 @@ module Linter
   end
 
   def prefix_property_values?(file, error_log)
-    errorlog8 = 'Unexpected prefix property float value on line'
+    errorlog8 = 'Unexpected prefix float value on line'
 
     file.each_with_index do |x, y|
       next if x.include?('{') || x.include?('}') || x == '' || x.start_with?('/*') || x.end_with?(',')
