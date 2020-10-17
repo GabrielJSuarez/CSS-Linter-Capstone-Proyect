@@ -7,7 +7,8 @@ def run_linter
   error_message = []
   call_file = Invoker.new
   file = call_file.file_data
-  call_file.test_caller(file, error_message)
+  call_file.test_caller_1(file, error_message)
+  call_file.test_caller_2(file, error_message)
   error_message
 end
 
