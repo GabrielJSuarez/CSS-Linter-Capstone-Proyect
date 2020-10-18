@@ -47,14 +47,16 @@
 - For Windows Users:
     - In the folder that contains the cloned repository, hold down SHIFT, and right-click.
     - In the context menu click in the option Open command window here (this will open the CDM Window)
-    - In the CMD Window run bin/main (file path)   ## Where the file path is the path of the CSS file that will be checked
+    - In the CMD Window run: bin/main (file path)   ## Where the file path is the path of the CSS file that will be checked
+    - To run the files in this project you can type ## bin/main assets/css/style_test_2.css
     - If any error is found it will show as an output in the console along with the line number of the ocurrance 
     - Fix any error showing and run the Linter script again to check if everything is complying
 
 - For Linux Users (Ubuntu):
     - In the folder that contains the cloned repository, right-click.
     - In the context menu click in the option Open in Terminal (this will open the Terminal)
-    - In the Terminal run bin/main (file path)   ## Where the file path is the path of the CSS file that will be checked
+    - In the Terminal run: bin/main (file path)   ## Where the file path is the path of the CSS file that will be checked
+    - To run the files in this project you can type ## bin/main assets/css/style_test_2.css
     - Fix any error showing and run the Linter script again to check if everything is complying
 
 - To run the Rspec test suit just type in the console 'rspec' and the test suit will run (You need to have the rspec gem installed, you can use the gemfile to install all dependencies)
