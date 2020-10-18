@@ -35,6 +35,8 @@
 
 [Live Demo for main and tests](https://repl.it/@GinnLaiho/CSS-Linter-Capstone-Proyect#README.md)
 
+- In the live view you can click run and it will run the two test cases in the file, or you can add a new file that you want to check and call it in the console. 
+
 ## Video Presentation
 
 [Video presentation of the project](https://www.loom.com/share/f6143af56fe243a29fa70c6b3268d7fc)
@@ -47,16 +49,16 @@
 - For Windows Users:
     - In the folder that contains the cloned repository, hold down SHIFT, and right-click.
     - In the context menu click in the option Open command window here (this will open the CDM Window)
-    - In the CMD Window run: bin/main (file path)   ## Where the file path is the path of the CSS file that will be checked
-    - To run the files in this project you can type ## bin/main assets/css/style_test_2.css
+    - In the CMD Window run: `bin/main (file path)`   ## Where the file path is the path of the CSS file that will be checked
+    - To run the files in this project you can type  `bin/main assets/css/style_test_1.css` or `bin/main assets/css/style_test_2.css`
     - If any error is found it will show as an output in the console along with the line number of the occurrence 
     - Fix any error showing and run the Linter script again to check if everything is complying
 
 - For Linux Users (Ubuntu):
     - In the folder that contains the cloned repository, right-click.
     - In the context menu click in the option Open in Terminal (this will open the Terminal)
-    - In the Terminal run: bin/main (file path)   ## Where the file path is the path of the CSS file that will be checked
-    - To run the files in this project you can type ## bin/main assets/css/style_test_2.css
+    - In the Terminal run: `bin/main (file path)`   ## Where the file path is the path of the CSS file that will be checked
+    - To run the files in this project you can type  `bin/main assets/css/style_test_1.css` or `bin/main assets/css/style_test_2.css`
     - Fix any error showing and run the Linter script again to check if everything is complying
 
 - To run the Rspec test suit just type in the console 'rspec' and the test suit will run (You need to have the rspec gem installed, you can use the gemfile to install all dependencies)
