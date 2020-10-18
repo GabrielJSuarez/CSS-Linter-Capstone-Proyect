@@ -33,7 +33,7 @@
 
 ## Repl
 
-[Live Demo for main and tests](https://repl.it/@GinnLaiho/CSS-Linter-Capstone-Proyect-1#README.md)
+[Live Demo for main and tests](https://repl.it/@GinnLaiho/CSS-Linter-Capstone-Proyect#README.md)
 
 ## Video Presentation
 
