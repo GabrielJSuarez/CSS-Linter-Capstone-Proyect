@@ -37,7 +37,9 @@ module Linter
     errorlog2 = 'Expected indentation of two spaces in declaration on line'
 
     file.each_with_index do |x, y|
-      next if x.include?('{') || x.include?('}') || x == '' || x.start_with?('/*') || x.end_with?(',') || x.end_with?(' ')
+      if x.include?('{') || x.include?('}') || x == '' || x.start_with?('/*') || x.end_with?(',') || x.end_with?(' ')
+        next
+      end
 
       error_log << "#{errorlog2} #{y + 1}" unless x[/^ */].length == 2
     end
@@ -59,7 +61,9 @@ module Linter
     errorlog4 = 'Empty space expected after colon (:) in declaration on line'
 
     file.each_with_index do |x, y|
-      next if x.include?('{') || x.include?('}') || x == '' || x.start_with?('/*') || x.end_with?(',') || x.end_with?(' ')
+      if x.include?('{') || x.include?('}') || x == '' || x.start_with?('/*') || x.end_with?(',') || x.end_with?(' ')
+        next
+      end
 
       error_log << "#{errorlog4} #{y + 1}" unless x.include?(': ')
     end

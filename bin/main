@@ -6,9 +6,9 @@ require_relative '../lib/css_caller'
 def run_linter
   error_message = []
   call_file = Invoker.new
-  file = call_file.file_data
-  call_file.test_caller_1(file, error_message)
-  call_file.test_caller_2(file, error_message)
+  path = call_file.file_path
+  file_data = call_file.get_file(path)
+  call_file.test_caller(file_data, error_message)
   error_message
 end
 

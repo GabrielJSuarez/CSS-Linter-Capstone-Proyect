@@ -9,9 +9,12 @@ describe Linter do
     let(:test_case_no_error) { ['.bg-orange {'] }
 
     context '#block_declaration_start? behaviour' do
+      # rubocop:disable Layout/LineLength
+
       example 'return error string when no space is detected before the block declaration {' do
         expect(block_declaration_start?(test_case_error, [])).to eq(['No space before opening block declaration on line 1'])
       end
+      # rubocop:enable Layout/LineLength
 
       example 'return empty array when no error is found' do
         expect(block_declaration_start?(test_case_no_error, [])).to eq([])

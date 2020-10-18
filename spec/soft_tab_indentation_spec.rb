@@ -9,9 +9,12 @@ describe Linter do
     let(:test_case_no_error) { ['  padding: 0 .5rem;'] }
 
     context '#soft_tab_indentation? behaviour' do
+      # rubocop:disable Layout/LineLength
+
       example 'return error string when the correct indentation is not found' do
         expect(soft_tab_indentation?(test_case_error, [])).to eq(['Expected indentation of two spaces in declaration on line 1'])
       end
+      # rubocop:enable Layout/LineLength
 
       example 'return empty array when no error is found' do
         expect(soft_tab_indentation?(test_case_no_error, [])).to eq([])

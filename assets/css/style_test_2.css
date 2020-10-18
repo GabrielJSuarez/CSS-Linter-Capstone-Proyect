@@ -1,16 +1,17 @@
 /* GLOBALS */
 
-html{
+html {
   font-size: 62.5%;
   box-sizing: border-box;
   font-family: 'Roboto',sans-serif;
 }
 
 body {
-    margin: 0 auto;
+  margin: 0 auto;
     width: 95%;
     background-color: #f1f1f1;
-    font-size: 1.2rem;}
+    font-size: 1.2rem;
+}
 
 *,
 *:before,
