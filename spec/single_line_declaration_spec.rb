@@ -1,0 +1,24 @@
+# spec/linter_spec.rb
+require_relative '../lib/linter_suite.rb'
+# rubocop:disable Style/MixinUsage
+include Linter
+# rubocop:enable Style/MixinUsage
+describe Linter do
+  describe '#single_line_declaration?' do
+    let(:test_case_error) { ['  padding:0 .5rem; padding: 0 .5rem;'] }
+    let(:test_case_no_error) { ['  padding: 0 .5rem;', '  padding: 0 .5rem;'] }
+
+    context '#single_line_declaration? behaviour' do
+      # rubocop:disable Layout/LineLength
+      example 'return error string when more than one declaration is found in a single line' do
+        expect(single_line_declaration?(test_case_error, [])).to eq(['Declaration should be in a single line, on line 1'])
+      end
+
+      # rubocop:enable Layout/LineLength
+
+      example 'return empty array when no error is found' do
+        expect(single_line_declaration?(test_case_no_error, [])).to eq([])
+      end
+    end
+  end
+end
