@@ -25,11 +25,11 @@
 
 - Ruby, tested with Rspec, formatted with Rubocop for the local environment and the GitHub check in the pull request.
 
-![screenshot 1](https://github.com/GabrielJSuarez/CSS-Linter-Capstone-Proyect/blob/tdd_feature_branch/screenshots/screenshot_1.png)
+![screenshot 1](https://github.com/GabrielJSuarez/CSS-Linter-Capstone-Proyect/blob/development/screenshots/screenshot_1.png)
 
-![screenshot 2](https://github.com/GabrielJSuarez/CSS-Linter-Capstone-Proyect/blob/tdd_feature_branch/screenshots/screenshot_2.png)
+![screenshot 2](https://github.com/GabrielJSuarez/CSS-Linter-Capstone-Proyect/blob/development/screenshots/screenshot_2.png)
 
-![screenshot 3](https://github.com/GabrielJSuarez/CSS-Linter-Capstone-Proyect/blob/tdd_feature_branch/screenshots/screenshot_3.png)
+![screenshot 3](https://github.com/GabrielJSuarez/CSS-Linter-Capstone-Proyect/blob/development/screenshots/screenshot_3.png)
 
 ## Repl
 
